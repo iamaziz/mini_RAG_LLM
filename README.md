@@ -8,7 +8,7 @@ Using `Mixtral:8x7` LLM (via Ollama), `LangChain` (to load the model), and `Chro
 To run this example, the following is required:
 
 - Install [Ollama.ai](https://ollama.ai)
-- download a local LLM: `ollama run mixtral` (requires at least ~30GB of RAM, smaller models may work but I didn't test)
+- download a local LLM: `ollama run mixtral` (requires at least ~50GB of RAM, smaller LLMs may work but I didn't test)
 - `pip install -r requirements.txt` (venv recommended)
 
 Then run:
