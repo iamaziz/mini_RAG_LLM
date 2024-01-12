@@ -24,6 +24,18 @@ https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/ee7d12a4-1acd-4a0d-8d46-a
 
 #### Simplified sequence
 
+<img width="1393" alt="image" src="https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/51620747-0e30-4710-a1a6-2bad4b8005d2">
 
-<img width="1377" alt="image" src="https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/6390aa47-bac7-4868-837b-ea99dd466d59">
-
+<!--
+sequenceDiagram
+    participant User as "User Input"
+    participant RAG as "Query RAG System"
+    participant LLM_Prompt as "Build LLM's Prompt"
+    participant LLM as "Ask the LLM"
+    participant Response as "Return LLM Response"
+    User->>RAG: Provide input
+    RAG->>LLM_Prompt: Provide relevant context
+    LLM_Prompt->>LLM: Provide prompt using RAG result
+    LLM->>Response: Generate response based on prompt
+    Response->>User: Display LLM response
+-->
