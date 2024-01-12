@@ -20,3 +20,8 @@ python mini_rag.py
 #### Example
 
 https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/ee7d12a4-1acd-4a0d-8d46-a90a20a98b5a
+
+
+#### Simplified workflow
+
+<img width="350" alt="image" src="https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/8ed234a6-e34c-4cee-acd6-02d7576708a0">
