@@ -5,11 +5,16 @@ from langchain.docstore.document import Document
 from langchain_community.llms import Ollama
 from langchain_community.embeddings import OllamaEmbeddings
 
+import ollama
+
+models = ollama.list()
+models = [d["name"] for d in models["models"]]
+BASE_OLLAMA_MODEL = input(f"Choose an OLLAMA model: {models}\n>>> ") # e.g. "mixtral"
 
 
 def build_rag(docs: List[str]):
     docs = [Document(page_content=doc) for doc in docs]
-    return Chroma.from_documents(documents=docs, embedding=OllamaEmbeddings())
+    return Chroma.from_documents(documents=docs, embedding=OllamaEmbeddings(model=BASE_OLLAMA_MODEL))
 
 
 def search_rag(rag, query: str, k=1, **kwargs):
@@ -21,12 +26,12 @@ def create_prompt(context: str, question: str):
     return f"Given the following context: \n\t{context} \n\nAnswer this question: \n\t{question}"
 
 
-def get_ollama_llm(name: str = "mixtral", **kwargs):
+def get_ollama_llm(name: str, **kwargs):
     return Ollama(model=name, **kwargs)
 
 
 def ask_llm(prompt: str):
-    llm = get_ollama_llm()
+    llm = get_ollama_llm(BASE_OLLAMA_MODEL)
     return llm.invoke(prompt)
 
 
