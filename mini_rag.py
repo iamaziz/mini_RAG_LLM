@@ -1,11 +1,11 @@
 from typing import List
 
+import ollama
 from langchain_community.vectorstores import Chroma
 from langchain.docstore.document import Document
 from langchain_community.llms import Ollama
 from langchain_community.embeddings import OllamaEmbeddings
 
-import ollama
 
 models = ollama.list()
 models = [d["name"] for d in models["models"]]
