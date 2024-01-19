@@ -7,8 +7,7 @@ from langchain_community.llms import Ollama
 from langchain_community.embeddings import OllamaEmbeddings
 
 
-models = ollama.list()
-models = [d["name"] for d in models["models"]]
+models = [d["name"] for d in ollama.list()["models"]]
 BASE_OLLAMA_MODEL = input(f"Choose an OLLAMA model: {models}\n>>> ") # e.g. "mixtral"
 
 

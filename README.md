@@ -2,7 +2,7 @@
 
 A minimal example for (in memory) RAG with Ollama LLM.
 
-Using `Mixtral:8x7` LLM (via Ollama), `LangChain` (to load the model), and `ChromaDB` (to build and search the RAG index). More details in [What is RAG anyway?](./what_is_rag_anyway.md)
+Using `Mixtral:8x7` LLM (via Ollama), `LangChain` (to load the model), and `ChromaDB` (to build and search the RAG index). More details in [What is RAG anyway?](https://altowayan.notion.site/altowayan/What-is-RAG-anyway-6a945b7b4e784eda8a707249a078937e)
 
 
 To run this example, the following is required:
