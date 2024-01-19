@@ -2,7 +2,7 @@
 
 A minimal example for (in memory) RAG with Ollama LLM.
 
-Using `Mixtral:8x7` LLM (via Ollama), `LangChain` (to load the model), and `ChromaDB` (to build and search the RAG index).
+Using `Mixtral:8x7` LLM (via Ollama), `LangChain` (to load the model), and `ChromaDB` (to build and search the RAG index). More details in [What is RAG anyway?](./what_is_rag_anyway.md)
 
 
 To run this example, the following is required:
@@ -24,7 +24,9 @@ https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/ee7d12a4-1acd-4a0d-8d46-a
 
 #### Simplified sequence
 
-<img width="1393" alt="image" src="https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/51620747-0e30-4710-a1a6-2bad4b8005d2">
+<img width="1469" alt="Untitled" src="https://github.com/iamaziz/mini_RAG_LLM/assets/3298308/6ed53abd-89a2-443a-b3bf-437c17af2ba7">
+
+> <sub>[source](https://chat.openai.com/share/35ddfd24-f719-436f-9109-f735940957c7)</sub>
 
 <!--
 sequenceDiagram
