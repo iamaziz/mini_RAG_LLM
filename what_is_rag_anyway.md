@@ -26,7 +26,6 @@ The following basic code example demonstrates the simple concept and sequence of
 
 Creating the RAG system
 
-[GitHub - iamaziz/mini_RAG_LLM: A minimal example for in-memory RAG using ChromaDB and an Ollama LLM](https://github.com/iamaziz/mini_RAG_LLM?tab=readme-ov-file#example)
 
 ```python
 from typing import List
@@ -120,13 +119,13 @@ After executing the code, the complete sequence of processes is displayed, start
 	Aziz Alto has lived in NYC for 10 years.
 # LLM PROMPT>>>
 
-```
+
 Given the following context:
 	Aziz Alto has lived in NYC for 10 years.
 
 Answer this question:
 	in one sentence, how many days did aziz alot live in new york?
-```
+
 
 # LLM RESPONSE:
 
@@ -145,13 +144,13 @@ Answer this question:
 	New York City's subway system is the oldest in the world.
 # LLM PROMPT>>>
 
-```
+
 Given the following context:
 	New York City's subway system is the oldest in the world.
 
 Answer this question:
 	which subway is the oldest ever?
-```
+
 
 # LLM RESPONSE:
 
@@ -172,13 +171,13 @@ Therefore, New York City's subway would be the answer to your question.
 	aziz alto is an imaginery LLM engineer in the movive 'The Matrix'.
 # LLM PROMPT>>>
 
-```
+
 Given the following context:
 	aziz alto is an imaginery LLM engineer in the movive 'The Matrix'.
 
 Answer this question:
 	which movie was aziz featured in?
-```
+
 
 # LLM RESPONSE:
 
@@ -191,7 +190,6 @@ Nonetheless, based on the information provided, Aziz Alto was featured in the mo
 
 ---
 
----
 
 # Real-world RAG example: Disease Detector
 
