@@ -67,7 +67,7 @@ docs = [
 ]
 ```
 
-Using RAG with sample local data
+To use RAG with sample local data
 
 ```python
 # Create a RAG instance using the provided local data
